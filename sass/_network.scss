@@ -1,0 +1,24 @@
+.network {
+
+    &-heading{
+        max-width: 380px;
+        margin: 0px auto 0px;
+    }
+
+    &-image{
+        margin: 155px auto 0px;
+        max-width: 1060px;
+        height: 538px;
+    }
+    
+}
+
+.partner{
+    margin-bottom: 50px;
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 60px;
+    }
+}
