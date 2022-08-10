@@ -1,5 +1,5 @@
 .customer {
-  padding-bottom: 65px;
+  // padding-bottom: 65px;
 
   .boxed {
     margin-bottom: 60px;
@@ -11,15 +11,11 @@
     margin-right: auto;
   }
 
-  // &-list{
-
-  // }
-
   &-item {
     border: 2px solid $gray-lighter-color;
     border-radius: 10px;
     padding: 30px;
-
+    margin: 0 25px;
     &.slick-current.slick-active {
       border-color: $primary-color;
     }
@@ -68,6 +64,7 @@
     gap: 0 15px;
     // align-items: center;
     transform: translateY(50%);
+
     button {
       background-color: $gray-color;
       width: 15px;
@@ -80,32 +77,31 @@
 
 
   .slick-active {
-    button{
+    button {
       background-color: $primary-color;
       width: 45px;
       height: 15px;
-      
+
     }
   }
 
-  .slick-track{
+  .slick-track {
     display: flex;
-    gap: 0 50px;
     padding-bottom: 60px;
   }
 
-  .slick-prev{
-    background-color: $background-color;   
+  .slick-prev {
+    background-color: $background-color;
     border: 1px solid $primary-color;
     right: 80px;
   }
 
-  .slick-next{
+  .slick-next {
     background-color: $primary-color;
     right: 0;
   }
 
-  .slick-arrow{
+  .slick-arrow {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -118,4 +114,31 @@
     z-index: 10;
   }
 
+}
+
+@media screen and (max-width: 1023.98px) {
+  .customer {
+    .slick-dots {
+      justify-content: center;
+    }
+
+    .slick-slider {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .customer {
+    &-list{
+      padding-bottom: 0px;
+    }
+    .slick-track {
+      padding-bottom: 0;
+    }
+
+    .slick-dots{
+      padding-left: 10px;
+    }
+  }
 }

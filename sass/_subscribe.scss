@@ -10,8 +10,22 @@
         // margin-bottom: 62px;
     }
 
-    &-content{
+    &-content {
         max-width: 370px;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .subscribe {
+        transform: translateY(50%);
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+    .subscribe-container{
+        flex-direction: column;
+        padding: 10px;
     }
 }

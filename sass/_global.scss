@@ -5,6 +5,7 @@ body {
   color: $text-color;
   font-weight: 400;
   background-color: white;
+  margin: 0;
 }
 
 button{
@@ -24,54 +25,67 @@ button{
   padding: 0 15px;
 }
 
-
-.button {
+.button{
   display: inline-block;
+  background: $primary-color;
   padding: 13px 45px;
-  border-radius: 100rem;
+  border-radius: 50px;
   text-decoration: none;
-  line-height: 1;
   font-size: 16px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-
-  &--primary {
-    background-color: $primary-color;
-    color: white;
-    font-weight: 700;
-  }
-
   &--outline {
     background-color: transparent;
-    color: $primary-color;
-    font-weight: 500;
     border: 1px solid;
-  }
-
-  &--rounded {
-    border-radius: 10px;
-    padding: 17px 65px;
-    // position: relative;
-  }
-
-  &--shadow{
-    position: relative;
-    &:after{
-      content: '';
-      position: absolute;
-      top:0;
-      left:50%;
-      width: 90%;
-      height: 100%;
-      transform: translate(-50%, 50%);
-      background: rgba(245, 56, 56, 0.35);
-      filter: blur(54px);
-      border-radius: 60px;
-      z-index: -1;
-    }
+    color:$primary-color;
   }
 }
+// .button {
+//   padding: 13px 45px;
+//   border-radius: 100rem;
+//   text-decoration: none;
+//   line-height: 1;
+//   font-size: 16px;
+//   cursor: pointer;
+//   border: none;
+//   outline: none;
+//   text-align: center;
+//   white-space: nowrap;
+//   &--primary {
+//     background-color: $primary-color;
+//     color: white;
+//     font-weight: 700;
+//   }
+
+//   &--outline {
+//     background-color: transparent;
+//     color: $primary-color;
+//     font-weight: 500;
+//     border: 1px solid;
+//   }
+
+//   &--rounded {
+//     border-radius: 10px;
+//     padding: 17px 65px;
+//     // position: relative;
+//     // box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+//   }
+
+//   &--shadow{
+//     position: relative;
+//     &:after{
+//       content: '';
+//       position: absolute;
+//       top:0;
+//       left:50%;
+//       width: 90%;
+//       height: 100%;
+//       transform: translate(-50%, 50%);
+//       background: rgba(245, 56, 56, 0.35);
+//       filter: blur(54px);
+//       border-radius: 60px;
+//       z-index: -1;
+//     }
+//   }
+// }
 
 .boxed{
   max-width: 555px;
@@ -79,3 +93,10 @@ button{
   margin-right: auto;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  .button{
+    padding: 13px 26px;
+  }
+}
+
